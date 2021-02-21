@@ -369,7 +369,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 30;
 }
 
 .card-thumb a {
@@ -462,7 +461,7 @@ footer {
 
 .footer {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 
   padding-top: 60px;
   padding-bottom: 60px;
@@ -507,7 +506,6 @@ footer .item + .item {
 
 .join-title {
   margin-bottom: 20px;
-  margin-top: 12px;
   display: block;
 
   font-weight: 700;
@@ -582,7 +580,10 @@ footer .item + .item {
 .button:focus,
 .button:active {
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-text);
+  outline: none;
 }
 
 .project {
@@ -600,11 +601,15 @@ footer .item + .item {
   margin-top: 30px;
 }
 
+.project-link {
+  display: block;
+}
+
 .project-content {
   padding: 20px 24px;
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
-  border-left: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
 .project-content .project-title {
@@ -621,4 +626,10 @@ footer .item + .item {
   font-style: normal;
   font-size: 16px;
   line-height: 1.9;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
