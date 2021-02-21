@@ -371,30 +371,25 @@ main {
   align-items: center;
 }
 
-.card-thumb a {
+.card-thumb .link {
   display: block;
-  background-color: var(--primary-back);
+  color: rgba(175, 177, 184, 1);
+  border-radius: 50%;
   width: 44px;
   height: 44px;
   padding: 12px;
-  border-radius: 50%;
 
   text-align: center;
 }
 
 .icon-net {
-  fill: rgba(175, 177, 184, 1);
+  fill: currentColor;
 }
 
-.card-thumb a:hover,
-.card-thumb a:focus {
+.card-thumb .link:hover,
+.card-thumb .link:focus {
   background-color: var(--accent-color);
-  outline: none;
-}
-
-.icon-net:hover,
-.icon-net:focus {
-  fill: rgba(255, 255, 255, 1);
+  color: var(--white-text);
   outline: none;
 }
 
@@ -422,31 +417,29 @@ main {
   margin-left: 30px;
 }
 
+.clients-content .link {
+  color: rgba(175, 177, 184, 1);
+}
+
 .clients-content .item {
   display: flex;
   width: 170px;
   height: 90px;
+  justify-content: center;
+  align-items: center;
 
-  background-color: var(--primary-back);
-  border: 1px solid rgba(175, 177, 184, 1);
+  border: 1px solid currentColor;
   border-radius: 4px;
 }
 
 .icon-company {
   margin: auto;
-  fill: rgba(175, 177, 184, 1);
+  fill: currentColor;
 }
 
-.clients-content .item:hover,
-.clients-content .item:focus {
-  border-color: var(--accent-color);
-  outline: none;
-  fill: var(--accent-color);
-}
-
-.icon-company:hover,
-.icon-company:focus {
-  fill: var(--accent-color);
+.clients-content .link:hover,
+.clients-content .link:focus {
+  color: var(--accent-color);
   outline: none;
 }
 
